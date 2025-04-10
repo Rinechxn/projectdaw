@@ -1,0 +1,40 @@
+{
+    "compilerOptions": {
+        "jsx": "react-jsx",
+        "target": "ESNext",
+        "useDefineForClassFields": true,
+        "lib": [
+            "DOM",
+            "DOM.Iterable",
+            "ESNext"
+        ],
+        "allowJs": false,
+        "module": "ESNext",
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "moduleResolution": "bundler",
+        "allowImportingTsExtensions": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noEmit": true,
+        "strict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true,
+        "baseUrl": ".",
+        "paths": {
+            "@app/*": [
+                "./src/app/*"
+            ],
+            "@components/*": [
+                "./src/app/components/*"
+            ],
+            "@plugins/*": [
+                "./src/plugins/*"
+            ]
+        }
+    },
+    "include": [
+        "src/**/*"
+, "build/main.cjs", "build/preload.js"    ],
+}

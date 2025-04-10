@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+body {
+  font-family: "Mona Sans";
+  user-select: none;
+}
+
+/* Knob.css */
+.knob-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.knob-label {
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #333;
+  user-select: none;
+}
+
+.knob-container {
+  position: relative;
+  display: inline-block;
+  touch-action: none;
+  user-select: none;
+}
+
+.knob-container.disabled {
+  opacity: 0.5;
+}
+
+.knob-value {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #333;
+  pointer-events: none;
+}
+
+.knob-container:focus-visible {
+  outline: 2px solid #0066cc;
+  outline-offset: 2px;
+  border-radius: 50%;
+}
+
+.knob-container:active {
+  cursor: grabbing;
+}
+
+/* For Webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #444 #1a1a1a;
+}
