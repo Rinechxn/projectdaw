@@ -244,13 +244,13 @@ const TransportPanel = () => {
                 <div className='flex items-center gap-4'>
                     <div className='flex flex-col -space-y-1'>
                         <span className='text-[10px] text-[#B3B3B3]'>Time</span>
-                        <span className='font-mono text-sm text-white'>
+                        <span className=' text-sm text-white'>
                             {formatTimeCode(timeCode)}
                         </span>
                     </div>
                     <div className='flex flex-col -space-y-1'>
                         <span className='text-[10px] text-[#B3B3B3]'>Position</span>
-                        <span className='font-mono text-sm text-white'>
+                        <span className=' text-sm text-white'>
                             {formatBeatTime(beatTime)}
                         </span>
                     </div>
